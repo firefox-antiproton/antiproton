@@ -1,0 +1,173 @@
+/** menu indent */
+#menu_openDownloads {
+  padding-left: 36px !important;
+}
+
+#menu_openAddons {
+  padding-left: 36px !important;
+}
+
+#sync-setup {
+  padding-left: 36px !important;
+}
+
+#sync-enable {
+  padding-left: 36px !important;
+}
+
+#sync-unverifieditem {
+  padding-left: 36px !important;
+}
+
+#sync-syncnowitem {
+  padding-left: 36px !important;
+}
+
+#sync-reauthitem {
+  padding-left: 36px !important;
+}
+
+#devToolsSeparator {
+  padding-left: 36px !important;
+}
+
+#webDeveloperMenu {
+  padding-left: 36px !important;
+}
+
+#menu_pageInfo {
+  padding-left: 36px !important;
+}
+
+#menu_preferences {
+  padding-left: 36px !important;
+}
+
+#menu_openHelp {
+  padding-left: 36px !important;
+}
+
+#feedbackPage {
+  padding-left: 36px !important;
+}
+
+#helpSafeMode {
+  padding-left: 36px !important;
+}
+
+#troubleShooting {
+  padding-left: 36px !important;
+}
+
+#help_reportSiteIssue {
+  padding-left: 36px !important;
+}
+
+#menu_HelpPopup_reportPhishingtoolmenu {
+  padding-left: 36px !important;
+}
+
+#menu_HelpPopup_reportPhishingErrortoolmenu {
+  padding-left: 36px !important;
+}
+
+#aboutName {
+  padding-left: 36px !important;
+}
+
+#helpPolicySupport {
+  padding-left: 36px !important;
+}
+
+#bookmarksShowAll {
+  padding-left: 36px !important;
+}
+
+#menu_bookmarkThisPage {
+  padding-left: 36px !important;
+}
+
+#menu_showAllHistory {
+  padding-left: 36px !important;
+}
+
+#sanitizeItem {
+  padding-left: 36px !important;
+}
+
+#sync-tabs-menuitem {
+  padding-left: 36px !important;
+}
+
+#historyRestoreLastSession {
+  padding-left: 36px !important;
+}
+
+#hiddenTabsMenu {
+  padding-left: 36px !important;
+}
+
+#historyUndoMenu {
+  padding-left: 36px !important;
+}
+
+#historyUndoWindowMenu {
+  padding-left: 36px !important;
+}
+
+#menu_undo {
+  padding-left: 36px !important;
+}
+
+#menu_redo {
+  padding-left: 36px !important;
+}
+
+#menu_cut {
+  padding-left: 36px !important;
+}
+
+#menu_copy {
+  padding-left: 36px !important;
+}
+
+#menu_paste {
+  padding-left: 36px !important;
+}
+
+#menu_delete {
+  padding-left: 36px !important;
+}
+
+#menu_selectAll {
+  padding-left: 36px !important;
+}
+
+#menu_find {
+  padding-left: 36px !important;
+}
+
+#menu_findAgain {
+  padding-left: 36px !important;
+}
+
+#textfieldDirection-swap {
+  padding-left: 36px !important;
+}
+
+@media (-moz-windows-non-native-menus) {
+  menupopup {
+    --menu-background-color: #F2F2F2 !important;
+    --menuitem-hover-background-color: #91C9F7 !important;
+  }
+  
+  .menu-right {
+    margin-inline-end: 3px !important;
+  }
+}
+
+@media (-moz-windows-non-native-menus) {
+   menupopup > menuitem, menupopup > menu {
+     margin: 1px;
+  }
+}
