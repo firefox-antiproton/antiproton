@@ -178,6 +178,10 @@ menupopup > menu > menupopup {
   padding-left: 36px !important;
 }
 
+#browserToolsMenu {
+  padding-left: 36px !important;
+}
+
 @media (-moz-windows-non-native-menus) {
   menupopup {
     --menu-background-color: #F2F2F2 !important;
