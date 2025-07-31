@@ -123,6 +123,9 @@
   --focus-outline-width: 1px !important;
   --arrowpanel-menuitem-border-radius: 1px !important;
   --nested-margin: -10px !important;
+  --border-radius-small: 0px;
+  --border-radius-medium: 0px;
+  --border-radius-large: 0px;
 }
 
 #zoom-controls {
@@ -355,7 +358,7 @@ menupopup > menuitem, menupopup > menu {
 }
 
 #hiddenTabsMenu {
-  padding-left: 36px !important;
+  padding-left: 5px !important;
 }
 
 #historyUndoMenu {
@@ -431,6 +434,10 @@ menupopup > menuitem, menupopup > menu {
 }
 
 #menu_newNavigatorTab {
+	padding-left: 30px !important;
+}
+
+#menu_newUserContext {
 	padding-left: 30px !important;
 }
 
@@ -530,6 +537,10 @@ menupopup > menuitem, menupopup > menu {
 	padding-left: 30px !important;
 }
 
+#menu_readerModeItem {
+	padding-left: 30px !important;
+}
+
 #menu_devToolbox {
 	padding-left: 30px !important;
 }
@@ -594,6 +605,230 @@ menupopup > menuitem, menupopup > menu {
 	padding-left: 30px !important;
 }
 
+#context-viewimage {
+	padding-left: 30px !important;
+}
+
+#context-saveimage {
+	padding-left: 30px !important;
+}
+
+#context-copyimage-contents {
+	padding-left: 30px !important;
+}
+
+#context-copyimage {
+	padding-left: 30px !important;
+}
+
+#context-sendimage {
+	padding-left: 30px !important;
+}
+
+#context-setDesktopBackground {
+	padding-left: 30px !important;
+}
+
+#context-openlinkintab {
+	padding-left: 30px !important;
+}
+
+#context-openlinkinusercontext-menu {
+	padding-left: 30px !important;
+}
+
+#context-openlink {
+	padding-left: 30px !important;
+}
+
+#context-bookmarklink {
+	padding-left: 30px !important;
+}
+
+#context-savelink {
+	padding-left: 30px !important;
+}
+
+#context-copylink {
+	padding-left: 30px !important;
+}
+
+#context-stripOnShareLink {
+	padding-left: 30px !important;
+}
+
+#context-searchselect {
+	padding-left: 30px !important;
+}
+
+#context-translate-selection {
+	padding-left: 30px !important;
+}
+
+#context-openlinkprivate {
+	padding-left: 30px !important;
+}
+
+#context_openANewTab {
+	padding-left: 30px !important;
+}
+
+#context_reloadTab {
+	padding-left: 30px !important;
+}
+
+#context_toggleMuteTab {
+	padding-left: 30px !important;
+}
+
+#context_toggleMuteSelectedTabs {
+	padding-left: 30px !important;
+}
+
+#context_pinTab {
+	padding-left: 30px !important;
+}
+
+#context_unpinTab {
+	padding-left: 30px !important;
+}
+
+#context_pinSelectedTabs {
+	padding-left: 30px !important;
+}
+
+#context_unpinSelectedTabs {
+	padding-left: 30px !important;
+}
+
+#context_unloadTab {
+	padding-left: 30px !important;
+}
+
+#context_duplicateTab {
+	padding-left: 30px !important;
+}
+
+#context_duplicateTabs {
+	padding-left: 30px !important;
+}
+
+#context_bookmarkSelectedTabs {
+	padding-left: 30px !important;
+}
+
+#context_bookmarkTab {
+	padding-left: 30px !important;
+}
+
+#context_moveTabOptions {
+	padding-left: 30px !important;
+}
+
+#context_reopenInContainer {
+	padding-left: 30px !important;
+}
+
+#context_selectAllTabs {
+	padding-left: 30px !important;
+}
+
+#context_closeTab {
+	padding-left: 30px !important;
+}
+
+#context_closeDuplicateTabs {
+	padding-left: 30px !important;
+}
+
+#context_closeTabOptions {
+	padding-left: 30px !important;
+}
+
+#context_undoCloseTab {
+	padding-left: 30px !important;
+}
+
+#context_fullscreenAutohide {
+	padding-left: 30px !important;
+}
+
+#context_fullscreenExit {
+	padding-left: 30px !important;
+}
+
+#context_moveToStart {
+	padding-left: 30px !important;
+}
+
+#context_moveToEnd {
+	padding-left: 30px !important;
+}
+
+#context_openTabInWindow {
+	padding-left: 30px !important;
+}
+
+#context_closeTabsToTheStart {
+	padding-left: 30px !important;
+}
+
+#context_closeTabsToTheEnd {
+	padding-left: 30px !important;
+}
+
+#context_closeOtherTabs {
+	padding-left: 30px !important;
+}
+
+#frame {
+	padding-left: 30px !important;
+}
+
+#context-showonlythisframe {
+	padding-left: 30px !important;
+}
+
+#context-openframeintab {
+	padding-left: 30px !important;
+}
+
+#context-openframe {
+	padding-left: 30px !important;
+}
+
+#open-frame-sep {
+	padding-left: 30px !important;
+}
+
+#context-reloadframe {
+	padding-left: 30px !important;
+}
+
+#context-bookmarkframe {
+	padding-left: 30px !important;
+}
+
+#context-saveframe {
+	padding-left: 30px !important;
+}
+
+#context-printframe {
+	padding-left: 30px !important;
+}
+
+#context-viewframesource {
+	padding-left: 30px !important;
+}
+
+#context-viewframeinfo {
+	padding-left: 30px !important;
+}
+
+.share-tab-url-item {
+	padding-left: 30px !important;
+}
+
 #main-window {
   --toolbar-field-focus-border-color: rgb(255, 255, 255) !important;
 }
@@ -654,3 +889,57 @@ menupopup, panel {
   --menuitem-padding: 5px 5px !important;
   --menu-arrow-size: 10px !important;
 }
+
+.restoreallitem {
+	padding-left: 30px !important;
+}
+
+#sidebar-search-container {
+  padding: 4px !important;
+}
+
+#sidebar-search-container {
+  background-color: #f0f0f0 !important;
+}
+
+#sidebar-header {
+  padding: 2px !important;
+  background-color: #d3d3d9 !important;
+  font-size: 14px !important;
+}
+
+#input {
+  min-height: 25px !important;
+  border-radius: 0px !important;
+}
+
+#sidebar-switcher-bookmarks {
+	padding-left: 30px !important;
+}
+
+#sidebar-switcher-history {
+	padding-left: 30px !important;
+}
+
+#sidebar-reverse-position {
+	padding-left: 30px !important;
+}
+
+#sidebar-menu-close {
+	padding-left: 30px !important;
+}
+
+.close-icon {
+	border-radius: 0px !important;
+}
+
+/* findbar.css | chrome://global/skin/findbar.css */
+
+.findbar-textbox {
+  border-radius: 0px !important;
+}
+
+.browserContainer > findbar {
+  padding-block: 2px !important;
+}
+
