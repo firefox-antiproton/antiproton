@@ -851,6 +851,18 @@ menupopup > menuitem, menupopup > menu {
   min-height: 26px !important;
 }
 
+
+/* urlbarView.css | chrome://browser/skin/urlbarView.css */
+
+.urlbarView {
+  margin-inline: calc(1px + var(--urlbar-container-padding)) !important;
+  width: calc(100% - 2 * (1px + var(--urlbar-container-padding))) !important;
+}
+
+.urlbarView-button {
+  border-radius: 0 !important;
+}
+
 :root {
   --toolbarbutton-inner-padding: 6px !important;
   --toolbarbutton-border-radius: 0px !important;
@@ -858,6 +870,7 @@ menupopup > menuitem, menupopup > menu {
   --arrowpanel-menuitem-padding-block: 0px !important;
   --arrowpanel-menuitem-margin-inline: 1px !important;
   --menuitem-border-radius: 0px !important;
+  --urlbarView-results-padding: 1px !important;
 }
 
 toolbarbutton menupopup[placespopup] > :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1 {
