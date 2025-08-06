@@ -56,6 +56,13 @@
   color: var(--toolbar-color) !important;*/
 }
 
+.tab-background {
+  &:is([selected], [multiselected]) {
+    /* background-color: var(--tab-selected-bgcolor); */
+    background-color: #f0f0f0 !important;
+  }
+}
+
 /* drag space */
 .titlebar-spacer[type="pre-tabs"],
 .titlebar-spacer[type="post-tabs"] {
