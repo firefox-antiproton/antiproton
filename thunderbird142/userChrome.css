@@ -45,6 +45,8 @@
   --border-radius-medium: 0px !important;
   --border-radius-large: 0px !important;
   --listbox-border-radius: 0px !important;
+  /*--toolbar-bgcolor: var(--layout-background-1);*/
+  --toolbar-bgcolor: var(--layout-background-2) !important;
 }
 
 menupopup, panel {
@@ -159,3 +161,55 @@ div.container {
   /*border-radius: 3px;*/
   border-radius: 0px !important;
 }
+
+/* Odstep w naglowku wiadomosci */
+.message-header-container {
+  /* padding: 3px; */
+  padding: 1px !important;
+}
+
+/* szerokosc przycisku hamburger menu */
+.button-appmenu {
+  /*min-width: 35px !important;*/
+  min-width: 25px !important;
+}
+
+/* kalendarz */
+/* calendar-views.css | chrome://calendar/skin/shared/calendar-views.css */
+
+.calview-toggle {
+  /* border-radius: 1000px; */
+  border-radius: 0px !important;
+}
+
+button.calview-toggle-item {
+  /* border-radius: 1000px; */
+  border-radius: 0px !important;
+}
+
+.calendar-month-day-box-date-label {
+  /* border-radius: 1000px; */
+  border-radius: 0px !important;
+}
+
+/* Element | chrome://messenger/content/messenger.xhtml */
+
+#calendarViewHeader {
+  background-color: #f4f4f5 !important;
+}
+
+/* calendar-views.css | chrome://calendar/skin/shared/calendar-views.css */
+
+.view-header {
+  /* font-weight: bold; */
+  font-weight: initial !important;
+}
+
+
+/* minimonth.css | chrome://calendar/skin/shared/widgets/minimonth.css */
+
+calendar-minimonth {
+  /* --mmDayBorderRadius: 3px; */
+  --mmDayBorderRadius: 0px !important;
+}
+
