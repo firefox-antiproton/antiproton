@@ -1,0 +1,556 @@
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+    .click-target-container *, .top-sites-list * {
+        /*color: #fff !important;
+	text-shadow: 2px 2px 2px #222 !important;*/
+	color: #000 !important ;
+    }
+
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background: #f9a no-repeat url(img/grayish.png) center ;
+        background-size: cover ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+	
+	:host(:not([native])) {
+		border-radius: 0px !important;
+	}
+
+	:host, :root {
+		--in-content-page-background: #efeeee !important;
+		border-radius: 0px !important;
+	}
+	
+	:root {
+		--newtab-background-color: #F0F0F0FF !important;
+		/*--newtab-background-color-secondary: rgba(240, 240, 240, 1.0) !important;*/
+		--newtab-primary-action-background: #00000000 !important;
+		--in-content-box-info-background: #efeeee !important;
+		--in-content-font-body-size-base: 14px !important;   /* default: 15px */
+	}
+	
+	.search-wrapper .search-inner-wrapper {
+		min-height: 50px !important;
+	}
+	
+	.search-wrapper .search-button {
+		/*border-radius: 0 3px 3px 0;*/
+		border-radius: 0 0px 0px 0 !important;
+	}
+
+	.search-wrapper .search-handoff-button, .search-wrapper input {
+		border-radius: 0px !important;
+	}
+
+	.top-site-outer .tile {
+		border-radius: 4px !important;
+	}
+
+	.top-site-outer {
+		border-radius: 4px !important;
+	}
+	
+	.home-section .section .selector {
+		border-radius: 0px !important;
+	}
+
+	.customize-menu .close-button {
+		border-radius: 0px !important;
+	}
+
+	.customize-menu.customize-animate-enter-done, .customize-menu.customize-animate-enter-active {
+		background-color: #efeeee !important;
+	}
+
+	.home-section .section input:checked + .slider {
+		background-color: #2f6dea !important;
+	}
+
+	.personalize-button {
+		border-radius: 0px !important;
+	}
+	
+	
+	.customize-menu {
+		background-color: #EFEEEE !important;
+	}
+	
+	.customize-menu .close-button-wrapper {
+		background-color: #F0F0F0FF !important;
+	}
+	
+	.top-site-outer .context-menu-button {
+		top: 0px !important;
+	}
+	
+	.top-site-outer .context-menu-button:hover {
+		background-color: #D8D8D8 !important;
+	}
+	
+	.top-site-outer .context-menu-button {
+		background-color: #D8D8D8 !important;
+	}
+}
+
+@-moz-document regexp("^(about:preferences.*)$"), regexp("^(about:addons.*)$") {
+	
+	:host(:not([native])) {
+		border-radius: 0px !important;
+	}
+
+	:host, :root {
+		--in-content-page-background: #efeeee !important;
+		border-radius: 0px !important;
+	}
+
+	:root {
+		--newtab-background-color: #F0F0F0FF !important;
+		/*--newtab-background-color-secondary: rgba(240, 240, 240, 1.0) !important;*/
+		--newtab-primary-action-background: #00000000 !important;
+		--in-content-box-info-background: #efeeee !important;
+		--in-content-font-body-size-base: 14px !important;   /* default: 15px */
+		--background-color-canvas: #f0f0f0 !important;
+	}
+
+	/*window, dialog {
+		background-color: transparent !important;
+	}*/
+
+	/* ustawienia - panel nawigacyjny */
+
+	#preferences-body {
+		--main-pane-width: 864px !important;
+	}
+
+	.navigation {
+		background-color: white !important;
+	}
+
+	#categories {
+		margin-top: 8px !important;
+	}
+
+	#categories > .category {
+		border-radius: 0px !important;
+		margin-inline-start: 1px !important;
+	}
+
+	.sidebar-footer-list {
+		margin-left: 0px !important;
+		margin-bottom: 8px !important;
+	}
+
+	.sidebar-footer-link {
+		border-radius: 0px !important;
+	}
+
+	.sticky-inner-container {
+		height: 48px !important;
+	}
+
+	#searchInput {
+		margin-top: 8px !important;
+		margin-bottom: 8px !important;
+		margin-right: 0px !important;
+		border-radius: 0px !important;
+	}
+
+	#policies-container {
+		margin-top: 8px !important;
+		padding-left: 0px !important;
+		background-color: #efeeee !important;
+	}
+
+	.accessory-button {
+		border-radius: 0px !important;
+	}
+
+	.info-box-container {
+		border-radius: 0px !important;
+	}
+
+	#translations-manage-install-list {
+		border-radius: 0px !important;
+	}
+
+	#filter {
+		border-radius: 0px !important;
+	}
+
+	.web-appearance-choice {
+		border-radius: 0px !important;
+	}
+
+	menulist {
+		border-radius: 0px !important;
+	}
+
+	button {
+		border-radius: 0px !important;
+	}
+
+	input {
+		border-radius: 0px !important;
+	}
+
+	richlistbox {
+		border-radius: 0px !important;
+	}
+
+	listheader {
+		border-radius: 0px !important;
+	}
+
+	tree {
+		border-radius: 0px !important;
+	}
+
+	/*html | select | input {
+		border-radius: 0px !important;
+	}
+
+	html|select[size][multiple], xul|listheader, xul|richlistbox {
+		border-radius: 0px !important;
+	}
+
+	html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]), html|textarea, xul|search-textbox {
+		border-radius: 0px !important;
+	}*/
+
+	/* dodanie obramowania dla grup */
+
+	#startupGroup {
+		border-left-width: 1px !important;
+		border-left-style: solid !important;
+		border-top-width: 1px !important;
+		border-top-style: solid !important;
+		border-right-width: 1px !important;
+		border-right-style: solid !important;
+		border-bottom-width: 1px !important;
+		border-bottom-style: solid !important;
+		border-color: #dfdede !important;
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+		padding-bottom: 10px !important;
+		margin-bottom: 16px !important;
+	}
+
+	#dataMigrationGroup {
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	  margin-bottom: 16px !important;
+	}
+
+	#mainPrefPane > groupbox:nth-child(9) {
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	}
+
+	#browserContainersExtensionContent {
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;
+	  background-color: #efeeee !important;
+	  padding-bottom: 0px !important;
+	  padding-top: 0px !important;
+	  margin-bottom: 8px !important;
+	  margin-top: 8px !important;
+	}
+
+	#webAppearanceGroup {
+	  border-top-width: 1px  !important;
+	  border-top-style: solid !important;
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  border-color: #dfdede !important;
+	  padding-bottom: 8px !important;
+	  margin-bottom: 16px !important;
+	}
+
+	#colorsGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-bottom: 8px !important;
+	  padding-right: 12px !important;
+	  padding-left: 12px !important;
+	  border-color: #dfdede !important;
+	  margin-bottom: 16px !important;
+	}
+
+	#fontsGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  padding-bottom: 8px !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  border-color: #dfdede !important;
+	  margin-bottom: 16px !important;
+	}
+
+	#zoomGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	  margin-bottom: 16px !important;
+	}
+
+	#languagesGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-bottom: 8px !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  border-color: #dfdede !important;
+	}
+
+	#downloadsGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	  margin-bottom: 16px !important;
+	}
+
+	#applicationsGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	  margin-bottom: 16px !important;
+	}
+
+	#drmGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  padding-bottom: 8px !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  border-color: #dfdede !important;
+	}
+
+	#updateApp {
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	}
+
+	#performanceGroup {
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	}
+
+	#browsingGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  padding-left: 12px !important;
+	  padding-bottom: 8px !important;
+	  padding-right: 12px !important;
+	  border-color: #dfdede !important;
+	}
+
+	#connectionGroup {
+	  border-left-width: 1px !important;
+	  border-left-style: solid !important;
+	  border-top-width: 1px !important;
+	  border-top-style: solid !important;
+	  border-right-width: 1px !important;
+	  border-right-style: solid !important;
+	  border-bottom-width: 1px !important;
+	  border-bottom-style: solid !important;
+	  padding-top: 8px;
+	  padding-left: 12px !important;
+	  padding-right: 12px !important;
+	  padding-bottom: 8px !important;
+	  border-color: #dfdede !important;
+	  margin-bottom: 0px !important;
+	}
+
+	/* Zmniejszenie marginesu gornego etykiety grupy kontrolek */
+
+	#startupGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#dataMigrationGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#mainPrefPane > groupbox:nth-child(9) > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#webAppearanceGroup > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#colorsGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#fontsGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#zoomGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#languagesGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#downloadsGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#applicationsGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#drmGroup > label:nth-child(1) > h2:nth-child(1) {
+	  margin-top: 8px !important;
+	}
+
+	#updateApp > label:nth-child(2) {
+	  margin-top: 8px !important;
+	}
+}
+
+@-moz-document url(moz-extension://d493dba5-0ab1-4c3a-81cc-c7fac38523b8/view.html) {
+	#toolbar {
+	  height: 30px !important;
+	  background-color: #ededf0 !important;
+	}
+
+	#toolbar .button {
+	  margin: 1px !important;
+	  border-radius: 0px !important;
+	}
+
+	#toolbar {
+	  padding: 2px 6px 2px 6px !important;
+	}
+
+	#search\ bar {
+	  vertical-align: middle !important;
+	}
+
+	#tab-search {
+	  padding-bottom: 4px !important;
+	  margin-top: 3px !important;
+	  width: 200px !important;
+	  padding-top: 2px !important;
+	}
+
+	.group {
+	  border-radius: 0px !important;
+	}
+
+	.group > .inner {
+	  border-radius: 0px !important;
+	}
+}
