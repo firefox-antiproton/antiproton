@@ -837,6 +837,22 @@ menupopup > menuitem, menupopup > menu {
 	padding-left: 30px !important;
 }
 
+#context_moveTabToNewGroup {
+	padding-left: 30px !important;
+}
+
+#context_ungroupTab {
+	padding-left: 30px !important;
+}
+
+#context_moveTabToGroup {
+	padding-left: 30px !important;
+}
+
+#context_moveTabToGroupNewGroup {
+	padding-left: 30px !important;
+}
+
 .share-tab-url-item {
 	padding-left: 30px !important;
 }
