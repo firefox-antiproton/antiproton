@@ -25,6 +25,13 @@
   --menu-item-padding: 0px !important;
   --menuitem-vertical-padding: 0px !important;
   --tab-min-height: 26px !important;
+  
+  /*--button-margin: 3px;
+  --button-padding: 3px;*/
+  --button-margin: 1px !important;
+  --button-padding: 2px !important;
+  /* --tree-header-table-height: max(27px, round(up, 1.4em, 1px)); */
+  --tree-header-table-height: 24px !important;
 }
 
 :root {
@@ -79,6 +86,11 @@ menupopup {
     /*padding-inline-start: 32px;*/
     padding-inline-start: 28px !important;
   }
+}
+
+menuseparator {
+  /*padding-block: 4px;*/
+  padding-block: 2px !important;
 }
 
 #messageHeader {
@@ -192,6 +204,30 @@ button.calview-toggle-item {
   border-radius: 0px !important;
 }
 
+calendar-minimonth {
+  /*--mmMainBorderRadius: 6px;*/
+  --mmMainBorderRadius: 0px !important;
+}
+
+th[is="tree-view-table-column-picker"] {
+  /*background-color: var(--tree-view-bg);*/
+  background-color: #f4f4f5 !important;
+}
+
+treecol {
+  background-color: #f4f4f5 !important;
+}
+
+#unifinder-searchBox {
+  /*background-color: #f8f8f8;*/
+  background-color: #f4f4f5 !important;
+}
+
+#task-addition-box {
+  /*background-color: #f8f8f8;*/
+  background-color: #f4f4f5 !important;
+}
+
 /* Element | chrome://messenger/content/messenger.xhtml */
 
 #calendarViewHeader {
@@ -211,5 +247,15 @@ button.calview-toggle-item {
 calendar-minimonth {
   /* --mmDayBorderRadius: 3px; */
   --mmDayBorderRadius: 0px !important;
+}
+
+.calendar-month-day-box-week-label {
+  /*border-radius: 1000px;*/
+  border-radius: 0px !important;
+}
+
+/* message table header */
+.tree-table-cell {
+  background-color: #f4f4f5 !important;
 }
 
