@@ -32,6 +32,9 @@
   --button-padding: 2px !important;
   /* --tree-header-table-height: max(27px, round(up, 1.4em, 1px)); */
   --tree-header-table-height: 24px !important;
+  
+  --arrowpanel-dimmed-further: #90C8F6 !important;	/* kolor tla wybranego menuitem, tylko menu glowne */
+  --arrowpanel-dimmed: #90C8F6 !important;	/* kolor tla wybranego menuitem */
 }
 
 :root {
@@ -54,7 +57,16 @@
   --listbox-border-radius: 0px !important;
   /*--toolbar-bgcolor: var(--layout-background-1);*/
   --toolbar-bgcolor: var(--layout-background-2) !important;
+  --toolbar-button-hover-background-color: #C0D3F3 !important;
+  --toolbar-button-hover-border-color: #90C8F6 !important;
+  /* --arrowpanel-background: var(--layout-background-1); */
+  --arrowpanel-background: var(--layout-background-2) !important;	/* kolor tla kontekstowego menu */
+  /* --toolbarbutton-hover-background: light-dark(var(--lwt-toolbarbutton-hover-background, rgba(0, 0, 0, .05)), var(--lwt-toolbarbutton-hover-background, rgba(255, 255, 255, .25))); */
+  /* --toolbarbutton-hover-bordercolor: light-dark(var(--lwt-toolbarbutton-hover-background, rgba(0, 0, 0, .25)), var(--lwt-toolbarbutton-hover-background, rgba(255, 255, 255, .5))); */
+  --toolbarbutton-hover-background: #C0D3F3 !important;
+  --toolbarbutton-hover-bordercolor: #90C8F6 !important;
 }
+
 
 menupopup, panel {
   --menu-icon-opacity: 1;
@@ -257,5 +269,34 @@ calendar-minimonth {
 /* message table header */
 .tree-table-cell {
   background-color: #f4f4f5 !important;
+}
+
+/* przycisk zamkniecia karty */
+
+button.tab-close-button {
+  /* margin-inline: 1px -2px; */
+  margin-inline: 1px -5px !important;
+}
+
+/* kolor menu */
+
+#mail-menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
+  /*background-color: light-dark(hsla(0, 0%, 0%, 0.12), hsla(0, 0%, 100%, 0.22));
+  color: inherit;*/
+  background-color: #C0D3F3 !important;
+  /*border: 1px solid #90C8F6 !important;*/
+}
+
+menupopup {
+  :root:not([lwtheme]) menubar > menu & {
+    /* --panel-background: Menu; */
+    --panel-background: #f4f4f5 !important;
+  }
+}
+
+
+#quick-filter-bar {
+  /* background-color: var(--layout-background-1); */
+  background-color: var(--layout-background-2) !important;
 }
 
