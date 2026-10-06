@@ -142,6 +142,9 @@
   --urlbarView-padding: 2px !important;
   --toolbarseparator-color: gray !important;
   --panel-item-button-padding: 3px 6px !important;
+  --sidebar-background-color: rgb(240, 240, 240) !important;
+  --card-background-color: rgb(240, 240, 240) !important;
+  --sidebar-panel-subheading-min-height: 22px !important;
 }
 
 #zoom-controls {
@@ -264,7 +267,7 @@ menuseparator {
 
 menu, menuitem, menucaption {
   border-radius: 0px !important;
-  padding: 1px 5px !important;
+  padding: 1px 6px !important;
 }
 
 /** menu item paddings  EXPERIMENTAL */
@@ -820,6 +823,14 @@ menupopup > menuitem, menupopup > menu {
 	padding-left: 30px !important;
 }
 
+menuitem[data-l10n-id="user-context-add-container"] {
+	padding-left: 28px !important;
+}
+
+menuitem[data-l10n-id="user-context-manage-containers"] {
+	padding-left: 28px !important;
+}
+
 #frame {
 	padding-left: 30px !important;
 }
@@ -881,6 +892,10 @@ menupopup > menuitem, menupopup > menu {
 }
 
 #context_moveTabToSplitView {
+	padding-left: 30px !important;
+}
+
+#menu_manageProfiles {
 	padding-left: 30px !important;
 }
 
@@ -1035,4 +1050,32 @@ menupopup, panel {
 .searchmode-switcher-panel-search-settings-button {
 margin-bottom: 2px !important;
 }
+
+sidebar-tab-row {
+  border-radius: 0px !important;
+}
+
+.sidebar-panel {
+  padding: 2px 5px !important;
+}
+
+#sidebar-box {
+  padding-left: 0px !important;
+}
+
+
+/* usercontext.css | chrome://browser/content/usercontext/usercontext.css */
+
+.menuitem-iconic[data-usercontextid] {
+  @media -moz-pref("browser.nova.enabled") {
+    & > .menu-icon {
+      /* width: var(--icon-size-large); */
+      /* height: var(--icon-size-large); */
+      width: var(--icon-size-small) !important;
+      height: var(--icon-size-small) !important;
+    }
+  }
+}
+
+
 
